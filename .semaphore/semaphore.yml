@@ -13,4 +13,6 @@ blocks:
             - sem-version go 1.16
             - checkout
             - go get ./...
-            - go test ./...
+            - go get gotest.tools/gotestsum
+            - 'export PATH=/home/semaphore/go/bin:$PATH'
+            - mkdir -p /tmp/test-results
